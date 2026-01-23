@@ -1,0 +1,126 @@
+/* RESET SIMPLE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* VARIABLES (facile à modifier plus tard) */
+:root {
+  --bg: #232324;
+  --card: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --primary: #3b82f6;
+}
+
+/* PAGE */
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* CONTAINER APP */
+.app {
+  max-width: 480px;
+  margin: 60px auto;
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+/* HEADER */
+.header {
+  padding: 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.header p {
+  margin-top: 4px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* MAIN */
+.main {
+  padding: 20px;
+}
+
+/* INPUT */
+.todo-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.todo-input input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.todo-input button {
+  padding: 10px 16px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* LISTE */
+.todo-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ITEM */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.todo-text {
+  font-size: 14px;
+}
+
+/* ACTIONS */
+.todo-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.todo-actions button {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
